@@ -24,3 +24,8 @@ function multiply($name, ...$numbers) {
 	return "$name the answer is $result";
 }
 
+/**
+ * Description
+ * 
+ * @param wit
+ */
