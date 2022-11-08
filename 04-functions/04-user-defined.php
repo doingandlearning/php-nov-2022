@@ -1,12 +1,12 @@
 <?php
 // namespace Aurora;
-// /**
-//  * Determins the output directory where your files will
-//  * go, based on where the system temp directory is.
-//  * 
-//  * @param string $systemTempDirectory
-//  * @return string
-//  */
+/**
+ * Determines the output directory where your files will
+ * go, based on where the system temp directory is.
+ * 
+ * @param string $systemTempDirectory
+ * @return string
+ */
 // function determineOutputDirectory(string $systemTempDirectory = "/tmp"): string
 // {
 // 	// 

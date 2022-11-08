@@ -2,9 +2,16 @@
 
 // Single Responsibility Principle
 
-function __(string $text, string $domain = "default") {
+function __( $text,  $domain = "default") {
 	return translate($text, $domain);
 }
+
+__("Good morning");
+
+// xdebug
+
+
+echo multiply("Lukasz", 123,123,123,123,5312);
 
 function multiply($name, ...$numbers) {
 	if(count($numbers) === 0 ) {
@@ -17,4 +24,3 @@ function multiply($name, ...$numbers) {
 	return "$name the answer is $result";
 }
 
-echo multiply("Lukasz", 123,123,123,123,5312);
