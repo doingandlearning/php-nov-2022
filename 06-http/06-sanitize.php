@@ -17,7 +17,8 @@
 <?php
 
 $stars = filter_input(INPUT_POST, 'stars', FILTER_SANITIZE_NUMBER_INT);
-$message = array_key_exists('message', $_POST) ? trim(strip_tags($_POST['message'])) : false;
+$message = array_key_exists('message', $_POST) ? $_POST['message'] : false;
+
 
 if($stars === null) {
 	echo '<p class="error">Stars input is not set.</p>';
@@ -57,7 +58,7 @@ printf("<p>Stars: %s</p><p>Message: %s</p>", var_export($stars, true), var_expor
 
 <form method="post">
 	<label for="stars">Stars: </label><br>
-	<input type="number" id="stars" name="stars" max="5" min="1" required><br>
+	<input type="text" id="stars" name="stars" max="5" min="1" required><br>
 	<label for="message">Message: </label><br>
 	<textarea
 		id="message"
@@ -70,3 +71,5 @@ printf("<p>Stars: %s</p><p>Message: %s</p>", var_export($stars, true), var_expor
 </form>
 </body>
 </html>
+
+SQL = FROM User INSERT $name
