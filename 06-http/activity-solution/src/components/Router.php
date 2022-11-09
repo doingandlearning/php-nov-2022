@@ -1,5 +1,4 @@
-<?php
-declare(strict_types=1);
+<?php declare(strict_types=1);
 
 namespace Components;
 
@@ -12,7 +11,6 @@ class Router
 {
     public function getHandler(): ?Handler
     {
-        // APACHE => REQUEST_URI
         switch ($_SERVER['PATH_INFO'] ?? '/') {
             case '/login':
                 return new Login();

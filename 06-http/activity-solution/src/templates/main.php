@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title><?php echo($title ?? '(no title)'); ?></title>
+    <title><?= ($title ?? '(no title)'); ?></title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
@@ -28,7 +28,7 @@
     } else { ?>
         <div class="jumbotron">
             <h1 class="display-4">Hello, world!</h1>
-            <p class="lead">This is the main layout, loaded from <code><?php echo __DIR__ . DIRECTORY_SEPARATOR . 'main.php'; ?></code></p>
+            <p class="lead">This is the main layout, loaded from <code><?php echo __DIR__ . '/main.php'; ?></code></p>
             <div class="alert alert-warning">
                 No content was provided for main layout.
             </div>
